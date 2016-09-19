@@ -32,7 +32,7 @@ In old `node.js` environments that supports `es5` only, `all-object-keys` could 
 var keys = require('all-object-keys/legacy');
 ```
 
-I browser:
+In browser:
 
 ```html
 <script src="dist/all-object-keys.js"></script>
