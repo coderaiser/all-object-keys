@@ -1,0 +1,5 @@
+2016.09.19, v1.0.1
+
+fix:
+- (package) node-all-object-keys -> all-object-keys
+
