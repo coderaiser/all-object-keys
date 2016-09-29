@@ -1,3 +1,9 @@
+2016.09.29, v1.0.2
+
+fix:
+- (package) scripts: build: add minify
+
+
 2016.09.19, v1.0.1
 
 fix:
