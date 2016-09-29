@@ -22,7 +22,7 @@
     "watch:coverage": "npm run watcher -- nyc npm test",
     "watcher": "nodemon -w test -w lib --exec",
     "6to5:lib": "babel lib -d legacy/lib",
-    "build": "redrun init 6to5:* legacy:* bundle:*",
+    "build": "redrun init 6to5:* legacy:* bundle:* minify",
     "wisdom": "npm run build",
     "legacy:index": "echo \"module.exports = require('./lib/all-object-keys');\" > legacy/index.js",
     "lint:eslint": "eslint lib test",
