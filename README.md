@@ -48,6 +48,11 @@ In browser:
 </script>
 ```
 
+## Related
+
+- [jessy](https://github.com/coderaiser/jessy "jessy") - get value by object property.
+- [nessy](https://github.com/coderaiser/nessy "nessy") - set value in nested object.
+
 ## License
 
 MIT
