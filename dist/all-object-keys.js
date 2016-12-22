@@ -46,8 +46,6 @@ function check(divider, obj) {
 }
 
 function keys(options, path, obj, array) {
-    var divider = options.divider;
-
     if (!array) {
         array = [];
     }
@@ -57,6 +55,8 @@ function keys(options, path, obj, array) {
     } else {
         Object.keys(obj).forEach(function (origKey) {
             var key = origKey;
+            var divider = options.divider;
+
             if (isNumber(key) && options.iPrefix) {
                 divider = '';
                 key = options.iPrefix + key + options.iSuffix;
