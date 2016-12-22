@@ -3,12 +3,6 @@
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var defaultOptions = {
-    divider: '.',
-    iPrefix: '',
-    iSuffix: ''
-};
-
 var isObject = function isObject(obj) {
     return (typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object';
 };
@@ -22,7 +16,11 @@ var isNumber = function isNumber(n) {
 };
 
 module.exports = function (userOptions, obj) {
-    var options = defaultOptions;
+    var options = {
+        divider: '.',
+        iPrefix: '',
+        iSuffix: ''
+    };
 
     if ((typeof userOptions === 'undefined' ? 'undefined' : _typeof(userOptions)) === 'object') {
         if (!obj) {
