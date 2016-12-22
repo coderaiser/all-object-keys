@@ -1,6 +1,6 @@
 {
   "name": "all-object-keys",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "get all keys of object",
   "main": "lib/all-object-keys.js",
   "directories": {
