@@ -1,3 +1,12 @@
+2017.01.30, v1.1.0
+
+feature:
+- (package) browserify v14.0.0
+- (package) allObjectKeys -> allkeys
+- (package) nyc v10.0.0
+- (package) nyc v9.0.1
+
+
 2016.09.29, v1.0.2
 
 fix:
