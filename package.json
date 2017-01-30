@@ -29,8 +29,8 @@
     "lint": "redrun lint:*",
     "fixlint": "npm run lint:eslint -- --fix",
     "bundle": "browserify -s allObjectKeys --ng false",
-    "bundle-es6": "npm run bundle -- -r ./lib/all-object-keys.js:all-object-keys ./lib/all-object-keys.js",
-    "bundle:es5": "npm run bundle -- -r ./legacy/lib/all-object-keys.js:all-object-keys ./legacy/lib/all-object-keys.js -o dist/all-object-keys.js",
+    "bundle-es6": "npm run bundle -- -r ./lib/all-object-keys.js:allkeys ./lib/all-object-keys.js",
+    "bundle:es5": "npm run bundle -- -r ./legacy/lib/all-object-keys.js:allkeys ./legacy/lib/all-object-keys.js -o dist/all-object-keys.js",
     "bundle:es6": "npm run bundle-es6 -- -o dist/all-object-keys.es6.js",
     "minify": "minify dist/all-object-keys.js > dist/all-object-keys.min.js"
   },

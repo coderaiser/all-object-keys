@@ -37,7 +37,7 @@ In browser:
 ```html
 <script src="dist/all-object-keys.js"></script>
 <script>
-    allObjectKeys('.', {
+    allkeys('.', {
         could: {
             be: 'used'
         }
