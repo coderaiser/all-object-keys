@@ -57,7 +57,7 @@
     "browserify": "^14.0.0",
     "coveralls": "^2.11.13",
     "eslint": "^4.0.0",
-    "minify": "^2.0.11",
+    "minify": "^3.0.0",
     "mkdirp": "^0.5.1",
     "nodemon": "^1.10.2",
     "nyc": "^11.0.2",
