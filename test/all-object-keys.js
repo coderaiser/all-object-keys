@@ -1,6 +1,6 @@
 'use strict';
 
-const test = require('tape');
+const test = require('supertape');
 const keys = require('..');
 
 test('arguments: no', (t) => {
@@ -18,6 +18,14 @@ test('arguments: no delimiter', (t) => {
     const expect = ['hello.world'];
     
     t.deepEqual(result, expect, 'should use default delimiter when only object provided');
+    t.end();
+});
+
+test('arguments: empty object', (t) => {
+    const result = keys({});
+    const expect = [];
+    
+    t.deepEqual(result, expect, 'should equal');
     t.end();
 });
 
