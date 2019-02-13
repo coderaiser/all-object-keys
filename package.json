@@ -60,7 +60,7 @@
     "mkdirp": "^0.5.1",
     "nodemon": "^1.10.2",
     "nyc": "^13.2.0",
-    "redrun": "^6.0.0",
+    "redrun": "^7.1.4",
     "supertape": "^1.2.1"
   },
   "dependencies": {
