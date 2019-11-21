@@ -1,3 +1,15 @@
+2019.11.21, v2.0.0
+
+fix:
+- (package) dependencies
+
+feature:
+- (all-object-keys) drop support of node < 8
+- (package) nodemon v2.0.0
+- (package) nyc v14.1.1
+- (package) eslint v6.6.0
+
+
 2019.02.13, v1.1.1
 
 fix:
