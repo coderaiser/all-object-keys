@@ -1,4 +1,5 @@
 .*
 test
-bower.json
+
+.madrun.js
 

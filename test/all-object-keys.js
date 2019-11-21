@@ -11,8 +11,8 @@ test('arguments: no', (t) => {
 test('arguments: no delimiter', (t) => {
     const result = keys({
         hello: {
-            world: true
-        }
+            world: true,
+        },
     });
     
     const expect = ['hello.world'];
@@ -42,7 +42,7 @@ test('result: should return array', (t) => {
         'config_compile_client',
         'config_compile_client_min',
         'config_compile_vendor',
-        'config_compile_vendor_min'
+        'config_compile_vendor_min',
     ];
     
     const result = keys('_', {
@@ -52,9 +52,9 @@ test('result: should return array', (t) => {
                 client: 'hello',
                 client_min: 'world',
                 vendor: '31337',
-                vendor_min: '1337'
-            }
-        }
+                vendor_min: '1337',
+            },
+        },
     });
     
     t.deepEqual(result, expect, 'should get key pathes');
@@ -68,8 +68,8 @@ test('result: should return array: when value is null ', (t) => {
     
     const result = keys('_', {
         config: {
-            plugins: null
-        }
+            plugins: null,
+        },
     });
     
     t.deepEqual(result, expect, 'should get key pathes');
@@ -83,8 +83,8 @@ test('result: should return array: when value is null ', (t) => {
     
     const result = keys('_', {
         config: {
-            plugins: null
-        }
+            plugins: null,
+        },
     });
     
     t.deepEqual(result, expect, 'should get key pathes');
@@ -98,8 +98,8 @@ test('result: should return array: when value is empty object', (t) => {
     
     const result = keys('_', {
         config: {
-            plugins: {}
-        }
+            plugins: {},
+        },
     });
     
     t.deepEqual(result, expect, 'should get key pathes');

@@ -12,27 +12,17 @@
     ]
   },
   "scripts": {
-    "init": "mkdirp dist",
-    "test": "tape test/**/*.js",
-    "coverage": "nyc npm test",
-    "report": "nyc report --reporter=text-lcov | coveralls",
-    "watch:test": "npm run watcher -- npm test",
-    "watch:tape": "nodemon -w test -w lib --exec tape",
-    "watch:coverage:tape": "npm run watcher -- nyc tape",
-    "watch:coverage": "npm run watcher -- nyc npm test",
-    "watcher": "nodemon -w test -w lib --exec",
-    "6to5:lib": "babel lib -d legacy/lib",
-    "build": "redrun init 6to5:* legacy:* bundle:* minify",
-    "wisdom": "npm run build",
-    "legacy:index": "echo \"module.exports = require('./lib/all-object-keys');\" > legacy/index.js",
-    "lint:eslint": "eslint lib test",
-    "lint": "redrun lint:*",
-    "fixlint": "npm run lint:eslint -- --fix",
-    "bundle": "browserify -s allObjectKeys --ng false",
-    "bundle-es6": "npm run bundle -- -r ./lib/all-object-keys.js:allkeys ./lib/all-object-keys.js",
-    "bundle:es5": "npm run bundle -- -r ./legacy/lib/all-object-keys.js:allkeys ./legacy/lib/all-object-keys.js -o dist/all-object-keys.js",
-    "bundle:es6": "npm run bundle-es6 -- -o dist/all-object-keys.es6.js",
-    "minify": "minify dist/all-object-keys.js > dist/all-object-keys.min.js"
+    "init": "madrun init",
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "report": "madrun report",
+    "watch:test": "madrun watch:test",
+    "watch:tape": "madrun watch:tape",
+    "watch:coverage:tape": "madrun watch:coverage:tape",
+    "watch:coverage": "madrun watch:coverage",
+    "watcher": "madrun watcher",
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint"
   },
   "repository": {
     "type": "git",
@@ -52,17 +42,17 @@
   },
   "homepage": "https://github.com/coderaiser/all-object-keys#readme",
   "devDependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-preset-env": "^1.6.0",
-    "browserify": "^16.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^6.6.0",
-    "minify": "^4.1.0",
-    "mkdirp": "^0.5.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^3.0.0",
+    "madrun": "^5.0.0",
     "nodemon": "^2.0.0",
     "nyc": "^14.1.1",
-    "redrun": "^7.1.4",
     "supertape": "^1.2.1"
+  },
+  "engines": {
+    "node": ">=8"
   },
   "dependencies": {},
   "publishConfig": {

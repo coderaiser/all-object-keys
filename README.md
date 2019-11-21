@@ -24,29 +24,6 @@ keys({
 // returns
 ['universal', 'hello.world']
 ```
-## Environments
-
-In old `node.js` environments that supports `es5` only, `all-object-keys` could be used with:
-
-```js
-var keys = require('all-object-keys/legacy');
-```
-
-In browser:
-
-```html
-<script src="dist/all-object-keys.js"></script>
-<script>
-    allkeys('.', {
-        could: {
-            be: 'used'
-        }
-    });
-    
-    // returns
-    ['could.be']
-</script>
-```
 
 ## Related
 
