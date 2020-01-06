@@ -10,7 +10,7 @@ test('arguments: no', (t) => {
 
 test('arguments: simplest object', (t) => {
     const result = keys({
-        hello: 'world'
+        hello: 'world',
     });
     
     const expect = ['hello'];
