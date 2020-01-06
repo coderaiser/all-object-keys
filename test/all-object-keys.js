@@ -8,6 +8,17 @@ test('arguments: no', (t) => {
     t.end();
 });
 
+test('arguments: simplest object', (t) => {
+    const result = keys({
+        hello: 'world'
+    });
+    
+    const expect = ['hello'];
+    
+    t.deepEqual(result, expect, 'should use default delimiter when only object provided');
+    t.end();
+});
+
 test('arguments: no delimiter', (t) => {
     const result = keys({
         hello: {
