@@ -11,6 +11,12 @@
       "env"
     ]
   },
+  "nyc": {
+    "exclude": [
+      ".madrun.js",
+      "test"
+    ]
+  },
   "scripts": {
     "init": "madrun init",
     "test": "madrun test",
@@ -45,7 +51,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^7.0.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-putout": "^3.0.0",
+    "eslint-plugin-putout": "^4.0.2",
     "madrun": "^6.0.1",
     "nodemon": "^2.0.0",
     "nyc": "^15.0.0",
