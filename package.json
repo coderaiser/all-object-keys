@@ -43,7 +43,7 @@
   "homepage": "https://github.com/coderaiser/all-object-keys#readme",
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^6.6.0",
+    "eslint": "^7.0.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^3.0.0",
     "madrun": "^5.0.0",
