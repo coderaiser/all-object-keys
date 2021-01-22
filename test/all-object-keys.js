@@ -116,3 +116,22 @@ test('result: should return array: when value is empty object', (t) => {
     t.deepEqual(result, expect, 'should get key pathes');
     t.end();
 });
+
+test('result: should return array: nested link', (t) => {
+    const expect = [
+        'hello',
+    ];
+    
+    const object = {
+        hello: 'world',
+        default: {
+        },
+    };
+    
+    object.default = object;
+    
+    const result = keys('_', object);
+    
+    t.deepEqual(result, expect, 'should get key pathes');
+    t.end();
+});
