@@ -1,3 +1,16 @@
+2021.01.22, v2.2.0
+
+feature:
+- (package) eslint-plugin-putout v6.13.1
+- (package) madrun v8.6.0
+- (package) supertape v4.8.0
+- (all-object-keys) add support of linked objects
+- (package) eslint-plugin-putout v4.0.2
+- (package) supertape v2.0.0
+- (package) madrun v6.0.1
+- (package) eslint v7.0.0
+
+
 2020.01.06, v2.1.1
 
 fix:
