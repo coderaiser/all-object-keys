@@ -1,10 +1,13 @@
 'use strict';
 
+const tryCatch = require('try-catch');
+
 const test = require('supertape');
 const keys = require('..');
 
 test('arguments: no', (t) => {
-    t.throws(keys, 'should throw when no args');
+    const [error] = tryCatch(keys);
+    t.ok(error, 'should throw when no args');
     t.end();
 });
 
@@ -41,9 +44,9 @@ test('arguments: empty object', (t) => {
 });
 
 test('arguments: divider not string', (t) => {
-    const fn = () => keys(1, {});
+    const [error] = tryCatch(keys, 1, {});
     
-    t.throws(fn, /divider should be a string/, 'should throw when divider not string');
+    t.equal(error.message, 'divider should be a string!', 'should throw when divider not string');
     t.end();
 });
 

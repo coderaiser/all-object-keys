@@ -3,20 +3,6 @@
   "version": "2.1.1",
   "description": "get all keys of object",
   "main": "lib/all-object-keys.js",
-  "directories": {
-    "test": "test"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "nyc": {
-    "exclude": [
-      ".madrun.js",
-      "test"
-    ]
-  },
   "scripts": {
     "init": "madrun init",
     "test": "madrun test",
@@ -55,12 +41,15 @@
     "madrun": "^8.6.0",
     "nodemon": "^2.0.0",
     "nyc": "^15.0.0",
+    "putout": "^13.8.0",
     "supertape": "^4.8.0"
   },
   "engines": {
     "node": ">=8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "try-catch": "^3.0.0"
+  },
   "publishConfig": {
     "access": "public"
   }
