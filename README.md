@@ -35,11 +35,11 @@ keys({
 
 MIT
 
-[NPMIMGURL]: https://img.shields.io/npm/v/all-object-keys.svg?style=flat
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/all-object-keys/master.svg?style=flat
-[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]: https://npmjs.org/package/all-object-keys "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/all-object-keys "Build Status"
+[NPMIMGURL]: https://img.shields.io/npm/v/all-object-keys.svg?style=flat
+[BuildStatusURL]: https://github.com/coderaiser/all-object-keys/actions/workflows/nodejs.yml
+[BuildStatusIMGURL]: https://github.com/coderaiser/all-object-keys/actions/workflows/nodejs.yml/badge.svg
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 [CoverageURL]: https://coveralls.io/github/coderaiser/all-object-keys?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/all-object-keys/badge.svg?branch=master&service=github
