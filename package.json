@@ -1,6 +1,7 @@
 {
   "name": "all-object-keys",
   "version": "2.2.0",
+  "type": "commonjs",
   "description": "get all keys of object",
   "main": "lib/all-object-keys.js",
   "scripts": {
@@ -38,16 +39,14 @@
     "coveralls": "^3.0.0",
     "eslint": "^9.20.1",
     "eslint-plugin-n": "^17.15.1",
-    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^24.0.3",
     "madrun": "^10.2.4",
     "nodemon": "^2.0.0",
-    "nyc": "^15.0.0",
     "putout": "^38.1.2",
     "supertape": "^10.10.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=18"
   },
   "dependencies": {
     "try-catch": "^3.0.0"

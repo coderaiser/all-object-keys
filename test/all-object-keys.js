@@ -7,6 +7,7 @@ const keys = require('..');
 
 test('arguments: no', (t) => {
     const [error] = tryCatch(keys);
+    
     t.ok(error, 'should throw when no args');
     t.end();
 });
@@ -29,7 +30,9 @@ test('arguments: no delimiter', (t) => {
         },
     });
     
-    const expect = ['hello.world'];
+    const expect = [
+        'hello.world',
+    ];
     
     t.deepEqual(result, expect, 'should use default delimiter when only object provided');
     t.end();
@@ -39,7 +42,7 @@ test('arguments: empty object', (t) => {
     const result = keys({});
     const expect = [];
     
-    t.deepEqual(result, expect, 'should equal');
+    t.deepEqual(result, expect);
     t.end();
 });
 
@@ -90,21 +93,6 @@ test('result: should return array: when value is null ', (t) => {
     t.end();
 });
 
-test('result: should return array: when value is null ', (t) => {
-    const expect = [
-        'config_plugins',
-    ];
-    
-    const result = keys('_', {
-        config: {
-            plugins: null,
-        },
-    });
-    
-    t.deepEqual(result, expect, 'should get key pathes');
-    t.end();
-});
-
 test('result: should return array: when value is empty object', (t) => {
     const expect = [
         'config_plugins',
@@ -121,14 +109,11 @@ test('result: should return array: when value is empty object', (t) => {
 });
 
 test('result: should return array: nested link', (t) => {
-    const expect = [
-        'hello',
-    ];
+    const expect = ['hello'];
     
     const object = {
         hello: 'world',
-        default: {
-        },
+        default: {},
     };
     
     object.default = object;
