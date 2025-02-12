@@ -74,7 +74,7 @@ test('result: should return array', (t) => {
         },
     });
     
-    t.deepEqual(result, expect, 'should get key pathes');
+    t.deepEqual(result, expect, 'should get key paths');
     t.end();
 });
 
@@ -89,7 +89,7 @@ test('result: should return array: when value is null ', (t) => {
         },
     });
     
-    t.deepEqual(result, expect, 'should get key pathes');
+    t.deepEqual(result, expect, 'should get key paths');
     t.end();
 });
 
@@ -104,7 +104,7 @@ test('result: should return array: when value is empty object', (t) => {
         },
     });
     
-    t.deepEqual(result, expect, 'should get key pathes');
+    t.deepEqual(result, expect, 'should get key paths');
     t.end();
 });
 
@@ -120,6 +120,6 @@ test('result: should return array: nested link', (t) => {
     
     const result = keys('_', object);
     
-    t.deepEqual(result, expect, 'should get key pathes');
+    t.deepEqual(result, expect, 'should get key paths');
     t.end();
 });
