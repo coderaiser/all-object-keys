@@ -109,7 +109,7 @@ test('result: should return array: when value is empty object', (t) => {
 });
 
 test('result: should return array: nested link', (t) => {
-    const expect = ['hello'];
+    const expected = ['hello'];
     
     const object = {
         hello: 'world',
@@ -120,6 +120,25 @@ test('result: should return array: nested link', (t) => {
     
     const result = keys('_', object);
     
-    t.deepEqual(result, expect, 'should get key paths');
+    t.deepEqual(result, expected, 'should get key pathes');
+    t.end();
+});
+
+test('result: sorted array', (t) => {
+    const object = {
+        line: [{
+            type: 'hello',
+        }, {
+            type: 'world',
+        }],
+    };
+    
+    const result = keys('/', object);
+    const expected = [
+        'line/0/type',
+        'line/1/type',
+    ];
+    
+    t.deepEqual(result, expected, 'should get key pathes');
     t.end();
 });
