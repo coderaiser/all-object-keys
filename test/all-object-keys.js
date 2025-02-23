@@ -120,7 +120,7 @@ test('result: should return array: nested link', (t) => {
     
     const result = keys('_', object);
     
-    t.deepEqual(result, expected, 'should get key pathes');
+    t.deepEqual(result, expected, 'should get key paths');
     t.end();
 });
 
@@ -139,6 +139,6 @@ test('result: sorted array', (t) => {
         'line/1/type',
     ];
     
-    t.deepEqual(result, expected, 'should get key pathes');
+    t.deepEqual(result, expected, 'should get key paths');
     t.end();
 });
