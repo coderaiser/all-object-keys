@@ -45,13 +45,13 @@
     "nodemon": "^3.1.9",
     "putout": "^38.1.2",
     "redlint": "^3.19.1",
-    "supertape": "^10.10.0"
+    "supertape": "^10.10.0",
+    "try-catch": "^3.0.0"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "try-catch": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
