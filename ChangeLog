@@ -1,3 +1,17 @@
+2025.12.31, v3.0.3
+
+fix:
+- 5529317 try-catch
+
+feature:
+- 05feb4c all-object-keys: try-catch v4.0.2
+- 91e1e72 all-object-keys: supertape v11.5.1
+- 32b1f0a all-object-keys: redlint v4.4.1
+- b01f218 all-object-keys: putout v41.2.1
+- 7056022 all-object-keys: madrun v11.0.6
+- 44ef44c all-object-keys: eslint-plugin-putout v29.2.0
+- 7bef28c all-object-keys: @putout/eslint-flat v3.0.4
+
 2025.02.23, v3.0.2
 
 feature:
