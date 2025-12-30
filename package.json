@@ -46,7 +46,7 @@
     "putout": "^41.2.1",
     "redlint": "^4.4.1",
     "supertape": "^11.5.1",
-    "try-catch": "^3.0.0"
+    "try-catch": "^4.0.2"
   },
   "engines": {
     "node": ">=18"
