@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/coderaiser/all-object-keys#readme",
   "devDependencies": {
-    "@putout/eslint-flat": "^3.0.4",
     "c8": "^10.1.3",
     "coveralls": "^3.0.0",
     "eslint": "^9.20.1",
